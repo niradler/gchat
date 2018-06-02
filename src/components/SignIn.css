@@ -1,0 +1,32 @@
+.social-signin {
+  padding: 20px 40px 20px 40px;
+  font-size: 21px;
+  border-radius: 100px;
+  text-align: center;
+  text-decoration: none;
+  background: #dc453a;
+  color: white !important;
+  transition: opacity 0.5s;
+}
+
+.social-signin-conatiner {
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.list-padding {
+  margin-top: 15px;
+  display: block;
+}
+
+.join-title{
+  margin-top: 15px;
+  display: block;
+}
+.join-links{
+  margin-top: 15px;
+  display: block;
+}
