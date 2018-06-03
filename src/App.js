@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Rooms from "./components/Rooms";
+import Room from "./components/Room";
 import SignIn from "./components/SignIn";
 import requireAuth from "./components/auth/requireAuth";
 import { BrowserRouter, Route } from "react-router-dom";
@@ -17,7 +18,8 @@ class App extends Component {
       <BrowserRouter>
         <div className="container">
           <Route exact path="/" component={SignIn} />
-          <Route path="/app" component={requireAuth(Rooms)} />
+          <Route path="/rooms" component={requireAuth(Rooms)} />
+          <Route path="/room/:id" component={requireAuth(Room)} />
         </div>
       </BrowserRouter>
     );
